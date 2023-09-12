@@ -13,6 +13,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "build": "cd client && npm run build",
     "server": "nodemon index.js",
     "client": "npm run start --prefix ./client",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
